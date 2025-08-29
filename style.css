@@ -317,6 +317,7 @@ body {
         max-height: 134px; /* 70% of 192px */
         min-width: 126px; /* 70% of 180px */
         min-height: 101px; /* 70% of 144px */
+        top: 33%; /* Moved down slightly from default 50% */
     }
     
     /* Plate responsive sizing */
@@ -450,28 +451,28 @@ body {
     #backgroundGif {
         width: 60%;
         height: 60%;
-        top: 35vh;
+        top: 38vh; /* Moved down 3vh */
         left: 50vw;
     }
     
     #backgroundGif2 {
         width: 50%;
         height: 50%;
-        top: 32vh;
+        top: 35vh; /* Moved down 3vh */
         left: 5vw;
     }
     
     #backgroundGif3 {
         width: 25%;
         height: 25%;
-        top: 0vh;
+        top: 3vh; /* Moved down 3vh */
         left: 75vw;
     }
 
     #backgroundGif4 {
       width: 150%;
       height: 50%;
-      top: 5vh;
+      top: 8vh; /* Moved down 3vh */
       left: -20vw;
   }
 
@@ -479,7 +480,7 @@ body {
     
     /* Image with text responsive */
     #imageWithText {
-        top: 95%;
+        top: 98%; /* Moved down slightly */
         transform: translate(-50%, -90%);
     }
     
@@ -512,6 +513,7 @@ body {
     .cake {
         width: 45.5vw; /* 70% of 65vw */
         height: 36.4vw; /* 70% of 52vw */
+        top: 55%; /* Moved down slightly from default 50% */
     }
     
     .plate {
