@@ -10,7 +10,7 @@ body {
   position: absolute;
   width: 250px; /* Size from smaller cake */
   height: 200px; /* Size from smaller cake */
-  top: 50%;
+  top: 30%;
   left: 50%;
   margin-top: -100px; /* Adjusted for new size */
   margin-left: -125px; /* Adjusted for new size */
@@ -263,10 +263,11 @@ body {
 
 #backgroundGif {
     position: absolute; /* Or absolute, depending on layout */
-    top: 300px;
-    left: -30px;
-    width: 70%;
-    height: 70%;
+    top: 100vh;
+    left: 50%;
+    transform: translateX(55%); /* Center horizontally */
+    width: 200%;
+    height: 200%;
     z-index: -3; /* Behind everything */
     object-fit: contain; /* Cover the entire viewport */
 }
@@ -437,24 +438,24 @@ body {
     
     /* Background GIFs responsive adjustments */
     #backgroundGif {
-        width: 50%;
-        height: 50%;
-        top: 50vh;
-        left: -5vw;
+        width: 60%;
+        height: 60%;
+        top: 30vh;
+        left: 15vw;
     }
     
     #backgroundGif2 {
-        width: 20%;
-        height: 20%;
-        top: 80vh;
-        left: 30vw;
+        width: 50%;
+        height: 50%;
+        top: 30vh;
+        left: 5vw;
     }
     
     #backgroundGif3 {
         width: 25%;
         height: 25%;
-        top: 75vh;
-        left: 50vw;
+        top: 0vh;
+        left: 75vw;
     }
     
     /* Image with text responsive */
