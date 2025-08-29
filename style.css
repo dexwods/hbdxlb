@@ -327,7 +327,7 @@ body {
         max-height: 134px; /* 70% of 192px */
         min-width: 126px; /* 70% of 180px */
         min-height: 101px; /* 70% of 144px */
-        top: 33%; /* Moved down slightly from default 50% */
+        top: 25%; /* Moved up for better mobile positioning */
     }
     
     /* Plate responsive sizing */
