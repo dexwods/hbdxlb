@@ -472,7 +472,7 @@ body {
     /* Candle count container responsive positioning */
     #candleCountContainer {
         left: 50%;
-        top: -16.8vw; /* 70% of -24vw */
+        top: -26.8vw; /* 70% of -24vw */
         transform: translateX(-50%); /* Center horizontally */
         padding: 4px 8px;
         font-size: 11px;
@@ -628,3 +628,4 @@ body {
         font-size: 12px;
     }
 }
+
