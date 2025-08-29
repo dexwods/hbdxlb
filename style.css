@@ -338,9 +338,9 @@ body {
         min-width: 126px; /* 70% of 180px */
         min-height: 101px; /* 70% of 144px */
         top: 35% !important; /* Moved up for better mobile positioning */
-        left: 30%;
-        margin-top: -16.8vw !important; /* Adjusted for mobile size */
-        margin-left: -14vw !important; /* Adjusted for mobile size */
+        left: 37% !important; /* Keep centered */
+        margin-top: -50px !important; /* Keep original margin approach */
+        margin-left: -75px !important; /* Adjusted for better centering */
     }
     
     /* Plate responsive sizing */
@@ -461,6 +461,12 @@ body {
         margin: 5px 10px;
         padding: 5px;
         line-height: 1.2;
+        text-align: center !important;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: calc(100% - 20px) !important;
+        box-sizing: border-box !important;
     }
     
     /* Candle count container responsive positioning */
@@ -511,8 +517,7 @@ body {
       top: 7vh; /* Moved down 3vh */
       left: 6vw;
   }
-	
-	#backgroundGif5 {
+  #backgroundGif5 {
       width: 50%;
       height: 50%;
       top: 60vh; /* Moved down 3vh */
@@ -563,6 +568,15 @@ body {
     * {
         box-sizing: border-box;
     }
+    
+    /* Ensure body stays properly positioned */
+    body {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
 
 /* Specific adjustments for smaller iPhone 14 models */
@@ -570,6 +584,12 @@ body {
     #topText {
         font-size: 15px;
         margin: 3px 8px;
+        text-align: center !important;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: calc(100% - 16px) !important;
+        box-sizing: border-box !important;
     }
     
     .cake {
@@ -608,4 +628,3 @@ body {
         font-size: 12px;
     }
 }
-
