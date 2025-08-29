@@ -1,5 +1,9 @@
 body {
   background-color: #fcf1f1;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  min-height: 100vh;
 }
 
 .cake {
@@ -218,9 +222,12 @@ body {
 
 #topText {
     font-family: 'Comic Neue', cursive, sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 15px;
+    line-height: 1.3;
+    padding: 0 10px;
+    word-wrap: break-word;
 }
 
 
@@ -258,8 +265,8 @@ body {
     position: absolute; /* Or absolute, depending on layout */
     top: 300px;
     left: -30px;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     z-index: -3; /* Behind everything */
     object-fit: contain; /* Cover the entire viewport */
 }
@@ -268,8 +275,8 @@ body {
     position: absolute; /* Or absolute, depending on layout */
     top: 500px;
     left: 170px;
-    width: 50%;
-    height: 50%;
+    width: 15%;
+    height: 15%;
     z-index: -2; /* Behind everything */
     object-fit: contain; /* Cover the entire viewport */
 }
@@ -284,5 +291,236 @@ body {
     object-fit: contain; /* Cover the entire viewport */
 }
 
+/* ============================================ */
+/* RESPONSIVE DESIGN FOR IPHONE 14 MODELS */
+/* ============================================ */
 
+/* Media query for iPhone 14, 14 Pro, and 14 Pro Max */
+@media screen and (max-width: 430px) {
+    
+    /* Cake responsive sizing */
+    .cake {
+        width: 60vw; /* Reduced size to show background GIFs */
+        height: 48vw; /* Maintain aspect ratio */
+        max-width: 240px;
+        max-height: 192px;
+        min-width: 180px;
+        min-height: 144px;
+    }
+    
+    /* Plate responsive sizing */
+    .plate {
+        width: 66vw;
+        height: 27vw;
+        max-width: 264px;
+        max-height: 108px;
+        min-width: 198px;
+        min-height: 81px;
+        bottom: -1.5vw;
+        left: -3vw;
+    }
+    
+    /* Layer responsive sizing */
+    .layer {
+        width: 60vw;
+        height: 24vw;
+        max-width: 240px;
+        max-height: 96px;
+        min-width: 180px;
+        min-height: 72px;
+    }
+    
+    /* Icing responsive sizing */
+    .icing {
+        width: 58vw;
+        height: 22vw;
+        max-width: 232px;
+        max-height: 88px;
+        min-width: 174px;
+        min-height: 66px;
+        left: 1vw;
+        top: 0.5vw;
+    }
+    
+    /* Drip responsive sizing */
+    .drip1 {
+        width: 9vw;
+        height: 11vw;
+        max-width: 36px;
+        max-height: 44px;
+        left: 1vw;
+        top: 12vw;
+    }
+    
+    .drip2 {
+        width: 12vw;
+        height: 14vw;
+        max-width: 48px;
+        max-height: 56px;
+        left: 44vw;
+        top: 16vw;
+    }
+    
+    .drip3 {
+        width: 18vw;
+        height: 14vw;
+        max-width: 72px;
+        max-height: 56px;
+        left: 21vw;
+        top: 12vw;
+    }
+    
+    /* Candle responsive sizing */
+    .candle {
+        width: 4vw;
+        height: 14vw;
+        max-width: 18px;
+        max-height: 56px;
+        min-width: 12px;
+        min-height: 40px;
+        border-radius: 2vw/1vw;
+    }
+    
+    .candle:before {
+        width: 4vw;
+        height: 2.2vw;
+        max-width: 18px;
+        max-height: 9px;
+        min-width: 12px;
+        min-height: 6px;
+    }
+    
+    /* Flame responsive sizing */
+    .flame {
+        width: 4.2vw;
+        height: 10vw;
+        max-width: 17px;
+        max-height: 39px;
+        min-width: 12px;
+        min-height: 28px;
+        top: -9.5vw;
+        margin-left: -2.1vw;
+    }
+    
+    /* Candles container positioning */
+    .candles {
+        top: -5.6vw;
+    }
+    
+    /* Text responsive sizing */
+    #topText {
+        font-size: 16px;
+        margin: 5px 10px;
+        padding: 5px;
+        line-height: 1.2;
+    }
+    
+    /* Candle count container responsive positioning */
+    #candleCountContainer {
+        left: 50%;
+        top: -24vw;
+        transform: translateX(-50%); /* Center horizontally */
+        padding: 4px 8px;
+        font-size: 11px;
+        width: auto;
+        min-width: 60px;
+    }
+    
+    #candleCount {
+        width: 8vw;
+        max-width: 35px;
+        min-width: 25px;
+        padding: 2px 4px;
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    /* Background GIFs responsive adjustments */
+    #backgroundGif {
+        width: 50%;
+        height: 50%;
+        top: 50vh;
+        left: -5vw;
+    }
+    
+    #backgroundGif2 {
+        width: 20%;
+        height: 20%;
+        top: 80vh;
+        left: 30vw;
+    }
+    
+    #backgroundGif3 {
+        width: 25%;
+        height: 25%;
+        top: 75vh;
+        left: 50vw;
+    }
+    
+    /* Image with text responsive */
+    #imageWithText {
+        top: 95%;
+        transform: translate(-50%, -90%);
+    }
+    
+    #rightSideImage {
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+    
+    #overlayText {
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+    /* Money rain responsive */
+    .money {
+        width: 12vw;
+        height: 24vw;
+        max-width: 50px;
+        max-height: 100px;
+    }
+}
 
+/* Specific adjustments for smaller iPhone 14 models */
+@media screen and (max-width: 393px) {
+    #topText {
+        font-size: 15px;
+        margin: 3px 8px;
+    }
+    
+    .cake {
+        width: 65vw;
+        height: 52vw;
+    }
+    
+    .plate {
+        width: 71vw;
+        height: 29vw;
+    }
+    
+    .layer {
+        width: 65vw;
+        height: 26vw;
+    }
+    
+    .icing {
+        width: 62vw;
+        height: 24vw;
+    }
+}
+
+/* Touch interaction improvements */
+@media (hover: none) and (pointer: coarse) {
+    #candleCountContainer {
+        /* Make touch target larger but not too big */
+        padding: 6px 10px;
+        min-height: 30px;
+        min-width: 70px;
+    }
+    
+    #candleCount {
+        min-height: 25px;
+        font-size: 12px;
+    }
+}
